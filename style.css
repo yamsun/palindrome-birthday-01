@@ -31,6 +31,7 @@ input {
     border-radius: 0.7em;
     border-style: none;
     cursor: pointer;
+    color: whitesmoke;
 
 }
 
@@ -41,10 +42,20 @@ input {
     width: 50vw;
     border: 2px dashed darkblue;
     width: 25em;
+    background-color:whitesmoke
 }
 
 #x-btn{
     background-color: rgb(244, 30, 30);
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
+}
+
+#message{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    background-color: rgb(0,0,0);
+    padding: 0.5em;
+    display: none;
+    
 }
