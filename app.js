@@ -1,6 +1,12 @@
 var bdayInput = document.querySelector("#bday-input");
 var showBtn = document.querySelector("#show-btn");
 var resultDiv = document.querySelector("#message");
+var noticeBox = document.querySelector("#notice");
+var xBtn = document.querySelector("#x-btn");
+
+xBtn.addEventListener("click", () => {
+  noticeBox.style.display = "none";
+});
 
 showBtn.addEventListener("click", clickHandler);
 
