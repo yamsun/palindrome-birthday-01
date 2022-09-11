@@ -175,8 +175,10 @@ function clickHandler(e) {
   console.log(bdayString === "");
 
   if (bdayString === "") {
-    resultDiv.innerHTML = "Please select a date";
+    resultDiv.innerHTML = "<b>Please select a date first </b>";
+    resultDiv.style.color = "red";
   } else {
+    resultDiv.style.color = "hotpink";
     var dateArr = bdayString.split("-");
     var yyyy = dateArr[0];
     var mm = dateArr[1];
@@ -204,12 +206,12 @@ function clickHandler(e) {
       const [ctr2, prevDate] = getPreviousPalindromeDate(date);
 
       if (ctr1 > ctr2) {
-        resultDiv.innerHTML = `The nearest plaindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed it by ${ctr2} days`;
+        resultDiv.innerHTML = `The nearest plaindrome date is <b> ${prevDate.day}-${prevDate.month}-${prevDate.year} </b>, you missed it by <b> ${ctr2} </b> days`;
       } else {
-        resultDiv.innerHTML = `The nearest plaindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr1} days`;
+        resultDiv.innerHTML = `The nearest plaindrome date is <b> ${nextDate.day}-${nextDate.month}-${nextDate.year} </b>, you missed it by  <b>${ctr1} </b> days`;
       }
     } else {
-      resultDiv.innerHTML = "Yay! Your birthday is a palindrome";
+      resultDiv.innerHTML = "<b>Yay! Your birthday is a palindrome 🎉</b>";
     }
 
     // resultDiv.innerHTML = "heyy";
